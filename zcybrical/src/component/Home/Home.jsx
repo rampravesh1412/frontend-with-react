@@ -351,32 +351,32 @@ const Home = () => {
           <img src={aboutUs} alt="" className='rounded-lg'/>
         </div>
 
-      </div>
+      </div> <br/><br/>
 
       {/* container of trusted  clients and partners */}
 
-      <div>
-        <ul>
+      <div className='container-trusted-clients  py-10 rounded-sm'>
+        <ul className='flex justify-evenly flex-wrap text-white'>
           <li>
-            <MdBusinessCenter className='inline'/>
-            <span>10+</span>
-            <p>Years in Business</p>
+            <MdBusinessCenter className='inline text-4xl'/>  
+            <span className='text-2xl font-bold'> {"\t"}10+</span>
+            <p className='container-trusted-paragraph'>Years in Business</p>
             
           </li>
           <li>
-            <GoProjectSymlink className='inline'/>
-            <span>200+</span>
-            <p>Projects Delivered</p>
+            <GoProjectSymlink className='inline text-4xl'/>
+            <span className='text-2xl font-bold'>{"\t"}200+</span>
+            <p className='container-trusted-paragraph'>Projects Delivered</p>
           </li>
           <li>
-            <BsPersonFillX className='inline' />
-            <span>200+</span>
-            <p>Happy Clients</p>
+            <BsPersonFillX className='inline text-4xl' />  
+            <span className='text-2xl font-bold'>{"\t"}200+</span>
+            <p className='container-trusted-paragraph'>Happy Clients</p>
           </li>
           <li>
-            <RiTeamLine className='inline'/>
-            <span>500+</span>
-            <p>Team of Expert</p>
+            <RiTeamLine className='inline text-4xl'/>
+            <span className='text-2xl font-bold'>{"\t"}500+</span>
+            <p className='container-trusted-paragraph'>Team of Expert</p>
           </li>
         </ul>
       </div>
