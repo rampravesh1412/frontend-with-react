@@ -1,17 +1,18 @@
 import React from 'react'
 import Navbar from './component/Navbar/Navbar';
-import Home from './component/Home/Home';
+import Footer from './component/Footer/Footer';
+
+import { Outlet } from 'react-router-dom';
+
 
 
 const App = () => {
-  
-
-
   return (
     <>
       <Navbar/>
-      <Home/>
-      
+     <Outlet/>
+      <Footer/>
+
     </>
   )
 }

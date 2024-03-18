@@ -26,18 +26,39 @@ import { MdBusinessCenter } from "react-icons/md";
 import { GoProjectSymlink } from "react-icons/go";
 import { BsPersonFillX } from "react-icons/bs";
 import { RiTeamLine } from "react-icons/ri";
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
+import girlsImg from "../../assets/girls-img.png"
+import pf1 from "../../assets/pf1.png"
+import pf2 from "../../assets/pf2.png"
+import pf3 from "../../assets/pf3.png"
+import pf4 from "../../assets/pf4.png"
+import pf5 from "../../assets/pf5.png"
+
 
 
 const Home = () => {
   return (
     <>
+    {/* mobile view */}
+
+    <div className='mobile-view-img'>
+      <h1 className='text-3xl text-center font-sans font-bold'>
+        Creating Top-Quality <br/> Digital <span className='text-green-600'>Solutions</span>
+      </h1> <br/>
+      <div className='flex justify-center'>
+        <button className='px-6 py-3 bg-green-600 text-white font-semibold rounded '>start a project</button>
+      </div>
+    </div>
+
+    {/*  */}
+    <br/>
       <div className='flex justify-around items-center font-serif home-container'>
         <div className='top-header'>
           <p className='text-6xl font-semibold'>Creating </p><br />
           <p className='text-6xl font-semibold'> Top-Quality </p> <br />
           <p className='text-6xl font-semibold'> Digital <span className='text-green-700'>Solutions</span> </p> <br />
           <button className='btn-start-project rounded'>Start a project</button>
-
 
         </div>
 
@@ -77,13 +98,13 @@ const Home = () => {
 
       <div className='dev-skills'>
         <ul className='flex justify-evenly devloper-skills'>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>Devlop</li>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>Discover</li>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>devloper</li>
-          <li className='font-bold text-xl'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
+          <li className='font-bold text-xl first'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
+          <li className='font-bold text-xl second'> <span><Sparkle className="inline text-green-600" /> </span>Devlop</li>
+          <li className='font-bold text-xl third'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
+          <li className='font-bold text-xl fourth'> <span><Sparkle className="inline text-green-600" /> </span>Discover</li>
+          <li className='font-bold text-xl fourth'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
+          <li className='font-bold text-xl fourth'> <span><Sparkle className="inline text-green-600" /> </span>devloper</li>
+          <li className='font-bold text-xl fourth'> <span><Sparkle className="inline text-green-600" /> </span>Design</li>
         </ul>
       </div>
 
@@ -380,10 +401,66 @@ const Home = () => {
           </li>
         </ul>
       </div>
+      <br/><br/><br/>
+       
+       {/* Testimonial */}
+
+       <div className=''>
+       
+          <p className='text-green-600 font-medium text-center' >Testimonial</p>
+        <h1 className='text-green-600 text-3xl font-bold text-center'>Clients love our <span>Service</span></h1> <br/>
+        <p className='text-center font-sans'>
+          Lorem Ipsum is simply dummy text of the printing and typesetting <br/> industry. Lorem Ipsum has been the industry standard.
+        </p>
+        
+       </div>
+
+          
+        {/* container popular belief */}
+
+        <div className='flex justify-around items-center container-popular-belief flex-wrap'>
+          <div className='img-container '>
+            <img   src={girlsImg} alt=""  className=''/>
+          </div>
+          <div className="-ml-60">
+            <h1 className='text-2xl font-sans font-bold'>Contary To Popular Belief</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> Lorem Ipsum has been the industry standard dummy text ever since the <br/> 1500s, when an unknown printer took a galley of type and scrambled it to <br/> make a type specimen book.</p> <br/><br/>
+            <p className='font-semibold'>Marya Jon</p>
+            <p>Managing Director</p>
+          </div>
+        </div>
+        <br/><br/>
+
+        {/* img  quote and arrow */}
+        <div className="flex justify-around flex-wrap py-20 bg-green-100">
+          <div className=''>
+          <button>
+          <FaArrowLeft className='text-3xl'/>
+          </button>
+          </div>
+          <div className='profileSlider'>
+            <img src={pf1} alt="" />
+          </div>
+          <div className='profileSlider'>
+            <img src={pf2} alt="" />
+          </div>
+          <div className='profileSlider'>
+            <img src={pf3} alt="" />
+          </div>
+          <div className='profileSlider'>
+            <img src={pf4} alt="" />
+          </div>
+          <div className='profileSlider'>
+            <img src={pf5} alt="" />
+          </div>
+          <div className=''>
+            <button className='text-3xl '><FaArrowRight/></button>
+          </div>
+          
+        </div>
 
 
-
-
+ <br/><br/>
     </>
   )
 }

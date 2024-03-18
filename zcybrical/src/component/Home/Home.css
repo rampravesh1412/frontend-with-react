@@ -115,3 +115,46 @@
     color: #5c5454f9;
 }
 
+
+
+.img-container img{
+    max-height: 60vh;
+}
+
+
+.profileSlider{
+    max-width: 4vw;
+    max-height: 4vh;
+
+}
+.mobile-view-img{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .top-header {
+      display: none; 
+    }
+    .second-box , .first-box , .third-box, .four-box {
+        display: none;
+    }
+    .five-box img{
+        position: relative;
+        left: -25% ;
+        top:  6rem;
+    }
+    .fourth{
+        display: none;
+    }
+    .dev-skills{
+        margin-top:  2rem;
+    }
+    .mobile-view-img{
+        display: inline-block;
+    }
+
+
+}
+
+
+
